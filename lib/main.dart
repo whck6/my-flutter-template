@@ -179,6 +179,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               Column(children: [
                                 const Align(alignment: Alignment.centerLeft, child: Text("Content"), ),
                                 TextFormField(
+                                  key: const Key('content'),
                                     controller: contentController,
                                     validator: (value) {
                                       if (value == null || value.isEmpty) {
